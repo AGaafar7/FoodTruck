@@ -1,70 +1,81 @@
+import { MapPin, Clock, Phone, Mail } from "lucide-react";
+
 export default function Contact() {
   return (
-    <footer
-      id="location"
-      className="py-24 px-6 max-w-7xl mx-auto border-t-2 border-white/10"
-    >
+    <section id="contact" className="py-24 px-6 max-w-7xl mx-auto">
       <p className="font-ui text-brand-orange text-[12px] font-bold tracking-[0.28em] uppercase mb-3">
         08 — Find Us
       </p>
       <h2 className="font-heading uppercase text-[clamp(40px,7vw,108px)] leading-[0.98] mb-12">
-        Pull up & <span className="text-brand-orange">grab one.</span>
+        Come get <span className="text-brand-orange">fed.</span>
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-12 mb-16">
-        <div className="grid grid-cols-2 gap-8">
-          <div>
-            <div className="font-ui text-brand-orange text-[12px] font-bold tracking-[0.12em] uppercase mb-2">
-              Address
-            </div>
-            <p className="font-heading uppercase text-[22px]">
-              221 Garden Avenue, Downtown
-            </p>
+      <div className="grid md:grid-cols-4 gap-5">
+        <a
+          href="https://maps.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-brand-card border-2 border-white/10 rounded-2xl p-6 hover:border-brand-orange transition-colors group"
+        >
+          <MapPin className="text-brand-orange mb-4" size={24} />
+          <div className="font-ui font-bold text-[11px] tracking-[0.18em] uppercase text-brand-gray mb-2">
+            Location
           </div>
-          <div>
-            <div className="font-ui text-brand-orange text-[12px] font-bold tracking-[0.12em] uppercase mb-2">
-              Hours
-            </div>
-            <p className="font-heading uppercase text-[22px]">
-              Mon–Sun · 11AM – 12 Midnight
-            </p>
+          <div className="font-heading text-lg leading-tight">
+            19578 Sun Cir
+            <br />
+            Downtown
           </div>
-          <div>
-            <div className="font-ui text-brand-orange text-[12px] font-bold tracking-[0.12em] uppercase mb-2">
-              Phone
-            </div>
-            <p className="font-heading uppercase text-[22px]">
-              +1 (212) 555-0148
-            </p>
+        </a>
+
+        <div className="bg-brand-card border-2 border-white/10 rounded-2xl p-6">
+          <Clock className="text-brand-orange mb-4" size={24} />
+          <div className="font-ui font-bold text-[11px] tracking-[0.18em] uppercase text-brand-gray mb-2">
+            Hours
           </div>
-          <div>
-            <div className="font-ui text-brand-orange text-[12px] font-bold tracking-[0.12em] uppercase mb-2">
-              Email
-            </div>
-            <p className="font-heading uppercase text-[18px]">
-              hello@grabyourfood.com
-            </p>
+          <div className="font-heading text-lg leading-tight">
+            Mon – Sat
+            <br />
+            11am – 10pm
           </div>
         </div>
 
-        <div className="flex items-end justify-start md:justify-end">
-          <a
-            href="#reserve"
-            className="font-ui font-extrabold text-[13.5px] tracking-[0.1em] uppercase bg-brand-orange text-white px-[30px] py-4 rounded-md hover:-translate-y-[3px] transition-transform shadow-[0_12px_34px_-12px_rgba(255,78,28,0.7)]"
-          >
-            Reserve a table
-          </a>
-        </div>
+        <a
+          href="tel:+10000000000"
+          className="bg-brand-card border-2 border-white/10 rounded-2xl p-6 hover:border-brand-orange transition-colors"
+        >
+          <Phone className="text-brand-orange mb-4" size={24} />
+          <div className="font-ui font-bold text-[11px] tracking-[0.18em] uppercase text-brand-gray mb-2">
+            Call
+          </div>
+          <div className="font-heading text-lg leading-tight">
+            (000) 000-0000
+          </div>
+        </a>
+
+        <a
+          href="mailto:hello@kiks.com"
+          className="bg-brand-card border-2 border-white/10 rounded-2xl p-6 hover:border-brand-orange transition-colors"
+        >
+          <Mail className="text-brand-orange mb-4" size={24} />
+          <div className="font-ui font-bold text-[11px] tracking-[0.18em] uppercase text-brand-gray mb-2">
+            Email
+          </div>
+          <div className="font-heading text-lg leading-tight">
+            hello@kiks.com
+          </div>
+        </a>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t-2 border-white/10 gap-4">
-        <div className="font-heading uppercase text-[24px]">
-          GRAB YOUR <span className="text-brand-orange">FOOD</span>
+      {/* Footer */}
+      <div className="mt-24 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="font-heading uppercase text-2xl tracking-tight">
+          KIKS<span className="text-brand-orange">.</span>
         </div>
-        <p className="font-ui text-brand-gray text-[12px] uppercase tracking-[0.04em]">
-          © 2026 Grab Your Food · All rights reserved
+        <p className="font-ui text-[12px] tracking-[0.14em] uppercase text-brand-gray">
+          © 2025 Kiks Food Truck · Made with 🔥 and grease
         </p>
       </div>
-    </footer>
+    </section>
   );
 }

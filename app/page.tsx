@@ -3,8 +3,8 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import MenuSection from "@/components/MenuSection";
-import MenuGrid from "@/components/MenuGrid";
-import Reservation from "@/components/Reservation";
+import FullMenu from "@/components/FullMenu";
+import OrderAhead from "@/components/OrderAhead";
 import Events from "@/components/Events";
 import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
@@ -17,8 +17,8 @@ export default function Home() {
       <Marquee />
       <About />
       <MenuSection />
-      <MenuGrid />
-      <Reservation />
+      <FullMenu />
+      <OrderAhead />
       <Events />
       <Reviews />
       <Contact />

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
+import AlfredoSliderSection from "@/components/AlfredoSliderSection";
 import About from "@/components/About";
 import MenuSection from "@/components/MenuSection";
 import FullMenu from "@/components/FullMenu";
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Marquee />
+      <AlfredoSliderSection />
       <About />
       <MenuSection />
       <FullMenu />

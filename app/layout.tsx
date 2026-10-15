@@ -11,9 +11,9 @@ const archivo = Archivo({
 });
 
 export const metadata = {
-  title: "GRAB YOUR FOOD — Flame-Grilled Greatness",
+  title: "KIKS — Street Food, Served Loud",
   description:
-    "100% flame-grilled, stacked by hand, and packed with attitude.",
+    "Chicken Alfredo, Philly cheesesteaks, tacos, and loaded fries. Handcrafted on wheels, delivered fast.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

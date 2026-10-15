@@ -11,7 +11,7 @@ const LINKS: [string, string][] = [
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 backdrop-blur-md bg-black/30">
+    <nav className="sticky top-[36px] left-0 right-0 z-50 border-b border-white/5 backdrop-blur-md bg-black/30">
       <div className="flex items-center justify-between gap-4 px-[clamp(20px,4vw,48px)] py-[18px]">
         <Link
           href="/"
